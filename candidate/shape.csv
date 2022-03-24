@@ -1,0 +1,6 @@
+size,color,shape,target
+small,red,circle,YES
+big,red,circle,NO
+small,red,triangle,NO
+big,blue,circle,NO
+small,blue,circle,YES
