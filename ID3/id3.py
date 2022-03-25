@@ -59,7 +59,7 @@ def id3(df,attribute_name,target):
         
 attribute_names=list(df_tennis.columns.str.strip())
 attribute_names.remove('Profit')
-info_gain(df_tennis,'Competition','Profit')
+#info_gain(df_tennis,'Competition','Profit')
 tree=id3(df_tennis,attribute_names,'Profit')
 '''print("The resulant Decision Tree")'''
 #pprint.pprint(tree)
