@@ -19,7 +19,7 @@ def entropy(probs):
 def info_gain(df,attr,target):
     df_split=df.groupby(attr)   #splitting the dataset into two parts, in which one dataset consist of a column values of attribute 'attr'
     #print(df_split.head())
-    nobs=len(df.index)     #no. of rows in the dataset
+    nobs=len(df)     #no. of rows in the dataset
     df_agg_ent=df_split.agg({target:[entropy_list, lambda x: len(x)/nobs]})     
     #print(df_agg_ent)
     df_agg_ent.columns=['Entropy','PropObserved']   #adding columns names to the dataset 'df_agg_ent'
